@@ -1,0 +1,92 @@
+section img{
+  object-fit: cover;
+  height: 500px;
+}
+h2{
+  margin-bottom: 20px;
+}
+
+
+#restaurante-imgs{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#restaurante-imgs :first-child{
+  width: 300px;
+  margin-right: 10px;
+}
+#restaurante-imgs :last-child{
+  width: calc(100% - 310px);
+}
+
+#cozinha-moderna-imgs{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cozinha-moderna-imgs img{
+  width: 495px;
+  margin-bottom: 10px;
+}
+
+#cozinha-moderna-imgs :first-child{
+  margin-right: 10px;
+}
+
+#cozinha-moderna-imgs :last-child{
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#home-office-imgs{
+  display: flex;
+
+}
+
+#home-office-imgs img{
+  width: 326.66px;
+  margin-right: 10px;
+}
+#home-office-imgs :last-child{
+  margin-right: 0px;
+}
+
+#escritorio-imgs{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#escritorio-imgs img{
+  width: 495px;
+  margin-bottom: 10px;
+}
+
+#escritorio-imgs :first-child{
+  margin-right: 10px;
+}
+#escritorio-imgs :last-child{
+  width: 100%;
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 900px) {
+
+  section{
+    padding: 10px !important;
+  }
+  section div{
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+
+  }
+
+  section div img{
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  } 
+
+
+}

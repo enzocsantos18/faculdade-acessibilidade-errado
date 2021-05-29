@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root {
+  --dourado: #C9BA67;
+  --verdeMusgo: #2F333C;
+  --verdeEscuro: #465454;
+  --verdeClaro: #539886;
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  background-color: #f4f4f4;
+}
+
+header{
+  position: fixed;
+  width: 100vw;
+  padding: 10px 0px;
+  background-color: rgb(0, 0, 0, 0.90);
+  color: var(--dourado);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header img, footer img{
+  width: 80px;
+}
+
+header button{
+  display: none;
+}
+
+header h1{
+  position: absolute;
+  transform: translateX(-99999px);
+}
+
+header nav li a{
+  text-decoration: none;
+  color: var(--dourado);
+}
+
+header nav li{
+  display:inline-block;
+  padding: 5px 40px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 40px;
+}
+header nav li:hover{
+  background-color: var(--verdeMusgo);
+}
+
+#contato{
+  background-color: var(--dourado);
+  font-weight: bold;
+  border-radius: 40px;
+}
+
+#contato a{
+  color: black;
+}
+
+#contato:hover{
+  background-color: #539886;
+  color: white;
+}
+
+#banner{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 48px;
+}
+
+#banner img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+img{
+  box-shadow: 0 20px 30px -16px rgba(9,9,16,.2);
+}
+
+main{
+  color: rgb(77, 77, 77);
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main h2{
+  color: var(--verdeEscuro);
+  font-size: 30px;
+  border-left: 2px solid var(--verdeClaro);
+  padding-left: 10px;
+}
+
+main p{
+  font-size: 16px;
+  line-height: 36px;
+}
+
+main section{
+  padding: 20px 0px;
+  margin-bottom: 48px;
+}
+
+h3{
+  margin-bottom: 20px;
+}
+
+footer{
+  background-color: var(--verdeMusgo);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dourado);
+}
+footer h1, footer ul{
+  
+  border-right: 2px solid var(--dourado);
+}
+footer ul, footer p, footer h1{
+  padding: 0px 10px;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer ul li{
+  padding: 5px;
+  font-size: 20px;
+}

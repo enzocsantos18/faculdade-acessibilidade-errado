@@ -1,0 +1,50 @@
+@media (max-width: 900px) {
+  header{
+    display: inherit;
+    text-align: center;
+  }
+  header button{
+    outline: 0;
+    display: inherit;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: 0;
+    color: #c9ba67;
+    height: 37px;
+    font-size: 25px;
+
+  }
+
+  .fechar{
+    display: none;
+  }
+
+  header ul li{
+    display: inherit;
+    margin: 20px 0;
+    font-size: 18px;
+  }
+
+  header ul li:last-child{
+    padding: 10px;
+    margin: 0;
+  }
+
+  #banner, #banner img{
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  footer{
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  footer h1, footer ul{
+    border-right: 0;
+    margin-bottom: 10px;
+  }
+}

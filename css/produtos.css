@@ -1,0 +1,31 @@
+.lista-produtos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lista-produtos .produto{
+  margin-right: 10px;
+}
+
+.lista-produtos .produto:last-child{
+  margin-left: 0;
+}
+
+.produto img{
+  height: 323px;
+  width: 323px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  
+  main section{
+    padding: 10px;
+  }
+  .produto{
+    margin-right: 0;
+  }
+  .produto img{
+    width: 100%;
+  }
+}

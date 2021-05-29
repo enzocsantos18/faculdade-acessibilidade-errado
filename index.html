@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oak móveis - home</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main-mobile.css">
+  <link rel="stylesheet" href="./css/home.css">
+
+  <script src="https://kit.fontawesome.com/6bfa51847b.js" crossorigin="anonymous"></script>
+  <script src="./js/menu.js"></script>
+
+</head>
+<body>
+  <header>
+    <a href="./index.html"><img src="./imgs/logo.png" alt="Logo oak"></a>
+    <h1>Oak</h1>
+    <nav class="fechar" id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li id="contato"><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <button onclick="toogleMenu()">
+      <i class="fa fa-bars"></i>
+
+    </button>
+  </header>
+
+  <div id="banner">
+    <img src="./imgs/banner.jpg" alt="">
+  </div>
+
+
+  <main>
+    <section>
+      <h2>Sobre nós</h2>
+      <div id="sobre-nos">
+        <div>
+          <p>A Oak Planejados acredita que uma vida harmoniosa,
+            começa pela casa. Com a proposta de oferecer conforto e manter
+            a sutileza dos mínimos detalhes, tanto estética quanto financeiramente,
+            criamos projetos e móveis personalizados,juntamente a profissionais qualificados, para transformar qualquer ambiente,
+            no seu ambiente.</p>
+        </div>
+        <img src="./imgs/cozinha.jpg" alt="">
+      </div>
+    </section>
+    <section>
+      <h2>Nossa filosofia</h2>
+      <div id="nossa-filosofia">
+        <div>
+          <p>O começo - Antes qualquer indicação, a Oak quer ouvir
+            seus clientes, entender suas necessidades e pensamentos,
+            podendo assim começar a trabalhar em cima de
+            ideias inovadoras, sem perder da essência.</p>
+            
+            <p>O meio - Através de uma imersão completa ao
+            projeto e nossa parceiria com as marcas mais
+            sofisticadas do mercado, criaremos juntos toda
+            estruturação do seu sonho, da entrada, até o último acabamento. </p>   
+            
+            <p>O fim - A certeza de um recomeço.</p>
+       
+        </div>
+        <img src="./imgs/arvores.jpg" alt="">
+      </div>
+    </section>
+    <section id="table">
+      <h2>Com quem já trabalhamos?</h2>
+      <table summary="Cliente especificado na coluna 1, Ambiente especificado na coluna 2 e Material utilizado na coluna 3, a cada linha temos um conjunto de informações do ambiente Desenvolvido para o cliente">
+        <caption>Tabela com os materiais utilizados na reforma e criação de ambientes para grandes clientes</caption>
+
+        <thead>
+          <tr>
+            <th scope="col" id="c">Cliente</th>
+            <th scope="col" id="a">Ambiente</th>
+            <th scope="col" id="m">Material utilizado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th headers="c" scope="row">Magazine Luiza</td>
+            <td headers="a">Escritório sede</td>
+            <td headers="m">Diferentes tipos de madeira, vidro, etc...</td>
+          </tr>
+          <tr>
+            <th headers="c" scope="row">Globo</td>
+            <td headers="a">Estudio de programa</td>
+            <td headers="m">Madeira, vidro, acrilico</td>
+          </tr>
+          <tr>
+            <th headers="c"  scope="row">Nubank</td>
+            <td headers="a" >Mesas do escritório</td>
+            <td headers="m" >Maderia de Carvalho</td>
+          </tr>
+          <tr>
+            <th headers="c" scope="row">Record</td>
+            <td headers="a">Estudio de programa</td>
+            <td headers="m">Madeira, vidro, acrilico</td>
+          </tr>
+          <tr>
+            <th headers="c" scope="row">Universidade Unip</td>
+            <td headers="a">Escritório da sede</td>
+            <td headers="m">Madeira, vidro, acrilico</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <img src="./imgs/logo.png">
+    <p>Desenvolvido por: Enzo Carvalho, Henrique Andrade e Nicolas Ruiz</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+main section div{
+  display: flex;
+}
+
+main section form{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  outline: none;
+  border: 1px solid rgb(139, 139, 139);
+  margin: 8px 0;
+}
+
+textarea{
+  height: 200px;
+  resize: none;
+}
+
+button{
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #539886;
+  border: 0;
+  color: white;
+  border-radius: 4px;
+}
+
+button:hover{
+  background-color: rgb(66, 121, 106);
+  cursor: pointer;
+}
+
+#panelError{
+  display: none;
+}
+
+#NomeInvalido, #NomeBranco, #NomeCarac, #EmailInvalido, #EmailBranco, #TelefoneInvalido, #MensagemBranco{
+  display: none;
+}
+
+.ul{
+  margin-left: 28px;
+  margin-bottom: 20px;
+  color: red;
+  list-style: inside;
+}
+
+.fl{
+  float: left;
+}
+
+.obrigatorio{
+  color: red;
+  float: left;
+  margin-left: 5px;
+}
+
+.displayBlock{
+  display: block;
+}
+
+
+@media (max-width: 900px) {
+
+  main section div{
+    flex-direction: column;
+  }
+  main section div form{
+    margin-bottom: 20px;
+  }
+
+  iframe{
+    width: 100%;
+  }
+}

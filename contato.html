@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oak móveis - home</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main-mobile.css">
+  <link rel="stylesheet" href="./css/contato.css">
+  <script src="https://kit.fontawesome.com/6bfa51847b.js" crossorigin="anonymous"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/contato.js"></script>
+
+</head>
+<body>
+  <header>
+    <a href="./index.html"><img src="./imgs/logo.png" alt="Logo oak"></a>
+    <h1>Oak</h1>
+
+    <nav class="fechar" id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li id="contato"><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <button onclick="toogleMenu()">
+      <i class="fa fa-bars"></i>
+
+    </button>
+  </header>
+
+  <div id="banner">
+    <img src="./imgs/contato.jpg" alt="">
+  </div>
+
+
+  <main>
+   
+    <section>
+      <h2>Contato</h2>
+      <p>Peça seu orçamento!</p>
+      <div id="panelError">
+        <h3>Aviso - Dados Inválidos</h3>
+        <ul class="ul" id="ul">
+          <li id="NomeInvalido">O Nome inválido, não use números neste campo!</li>
+          <li id="NomeBranco">O Nome não pode ficar em branco!</li>
+          <li id="NomeCarac">O Nome precisa ter no mínimo 4 caracteres!</li>
+          <li id="EmailInvalido">O Email inválido!</li>
+          <li id="EmailBranco">O Email não pode ficar em branco!</li>
+          <li id="TelefoneInvalido">O Telefone inválido, não use letras neste campo!</li>
+          <li id="MensagemBranco">A Mensagem não pode ficar em branco!</li>
+        </ul>
+      </div>
+
+      <div>
+      <form> <!--action="POST"-->
+        <div class="displayBlock">
+          <label for="nome" class="fl">Nome Completo</label>
+          <span class="obrigatorio">*</span></label><br>
+        </div>
+        <input type="text" id="nome" aria-required="true" aria-invalid="false">
+        
+        <div class="displayBlock">
+          <label for="email" class="fl">Email Pessoal</label>
+          <span class="obrigatorio">*</span></label><br>
+        </div>
+        <input type="text" id="email" aria-required="true" aria-invalid="false">
+
+        <label for="email">Telefone</label>
+        <input type="phone" id="phone" aria-required="false" aria-invalid="false">
+
+        <div class="displayBlock">
+          <label for="mensagem" class="fl">Mensagem</label>
+          <span class="obrigatorio">*</span></label><br>
+        </div>
+        <textarea id="mensagem" aria-required="true" aria-invalid="false"></textarea>
+
+        <button type="submit" onclick="return Validar(this)">Enviar</button>
+      </form>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.502819749078!2d-46.32855838501517!3d-23.942653484494944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce024465fa95bf%3A0x1e411e16e8228ce3!2sFatec%20Rubens%20Lara!5e0!3m2!1spt-BR!2sbr!4v1604854892725!5m2!1spt-BR!2sbr" width="400" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section> 
+  </main>
+  <footer>
+    <img src="./imgs/logo.png">
+    <p>Desenvolvido por: Enzo Carvalho, Henrique Andrade e Nicolas Ruiz</p>
+  </footer>
+</body>
+</html>
